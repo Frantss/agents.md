@@ -43,13 +43,14 @@
 - If code was written, check it against our [coding standards](#coding-standards).
 - Run checks proportional to the change. Report their results and explain any skipped checks.
 - Collect evidence of the changed behavior and identify any remaining limitations.
-- Update existing related documentation when the change affects its accuracy.
+- Apply the [documentation rules](#writing-documentation) to the change.
 
 ## Writing documentation
 
-- Keep documentation focused and well structured.
-- As with code, **delete aggressively**.
-- Keep it in sync with the code.
+- Write documentation only when requested or when necessary usage, setup, or maintenance guidance would otherwise be missing or inaccurate.
+- Keep each document focused on one purpose. Include only what the reader needs for that purpose.
+- Prefer updating the relevant existing document. Keep each fact in one place and avoid restating details already clear from code or configuration.
+- Remove obsolete or redundant text in documentation you touch.
 
 ## Git & GitHub
 
