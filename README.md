@@ -2,9 +2,11 @@
 
 The instructions I use with coding agents.
 
-## Use
+## Installation
 
-Copy [AGENTS.md](AGENTS.md) into a project's root, then add that project's conventions and required checks.
+```sh
+curl -fsSL https://raw.githubusercontent.com/Frantss/agents.md/main/AGENTS.md -o AGENTS.md
+```
 
 ## License
 
