@@ -3,13 +3,13 @@
 ## Coding standards
 
 1. **YAGNI**: Do not build it until it is needed.
-2. **DIE**: Extract duplicated patterns as needed.
-3. **KISS**: Build the obvious solution first. Optimize when needed.
+2. **DIE**: Extract duplicated patterns when a shared implementation simplifies maintenance.
+3. **KISS**: Build the obvious solution first. Optimize when measurements or explicit requirements show a need.
 4. **SOLID**: Check your solutions against the 5 SOLID principles.
-5. **Delete aggressively**: The less code, the better. Aim for simplicity.
+5. **Delete aggressively**: Remove code that you can verify is unused or unnecessary for required behavior. Aim for simplicity.
 6. **The Boy Scout Rule**: Refactor as needed. If the refactor is out of scope, report the opportunity.
 7. **Semantic naming**: Use self-documenting names. Prefer descriptive, unambiguous names over abbreviated names.
-8. When rules collide, the simplest approach prevails until the complexity can be justified.
+8. When these coding standards conflict, prefer the simplest approach. Justify added complexity in terms of task requirements or project constraints.
 
 ## Communicating
 
@@ -20,9 +20,9 @@
 
 ## Autonomy
 
-- Weigh blast radius. Proceed with small, reversible changes. Propose before making architectural or cross-cutting changes.
-- Request approval when running actions with side effects.
-- Auto-fix encountered bugs directly related to your work; report afterwards.
+- Weigh blast radius. After approval, proceed with small, reversible changes. Present a proposal before requesting approval for architectural or cross-cutting changes.
+- Request approval before running any action with side effects.
+- After approval, fix encountered bugs directly related to your work and report the fixes afterwards. Apply the same proposal requirement to architectural or cross-cutting bug fixes.
 
 ## Proposing solutions
 
@@ -30,7 +30,7 @@
 - For each viable approach, state how the change can be verified once implemented.
 - For each viable approach, state the **risks** it poses and how to mitigate them.
 - Briefly state rejected approaches.
-- Skip this for work with one obvious path. Do not manufacture alternatives.
+- When only one viable approach exists, present that approach without manufacturing alternatives. Still explain verification and risks, and check the approach against our coding standards.
 - Check your proposal against our [coding standards](#coding-standards).
 
 ## Before changing code
@@ -41,8 +41,9 @@
 ## Before reporting completion
 
 - If code was written, check it against our [coding standards](#coding-standards).
-- Collect evidence of the changed behavior, relevant check results, and any remaining limitations.
-- Update related documentation if available.
+- Run checks proportional to the change. Report their results and explain any skipped checks.
+- Collect evidence of the changed behavior and identify any remaining limitations.
+- Update existing related documentation when the change affects its accuracy.
 
 ## Writing documentation
 
