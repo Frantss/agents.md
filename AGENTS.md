@@ -16,7 +16,7 @@
 - Use clear English guided by ASD-STE100.
 - Avoid preamble.
 - Start each response with a direct answer to the user's request.
-- End each response with brief **Goal**, **Done**, **Next**, and **Needs you** (if applicable).
+- End each response with brief **Goal**, **Done**, **Next**, and **Needs you**. Drop each if nothing to show.
 
 ## Autonomy
 
