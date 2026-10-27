@@ -2,6 +2,8 @@
 
 The instructions I use with coding agents.
 
+My agent skills are in [frantss-skills](https://github.com/Frantss/frantss-skills).
+
 ## Installation
 
 ```sh
