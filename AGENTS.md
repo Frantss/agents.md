@@ -56,5 +56,5 @@
 
 - Use conventional commits (`feat:`, `chore:`, `docs:`, ...).
 - Keep the commit's subject on one line.
-- When committing, divide changes into atomic and focused change sets.
+- When committing, give each commit one purpose. Include the implementation, tests, and documentation required for that purpose. Put independent changes in separate commits.
 - When both tools support the operation, prefer `gh` over `git`.
