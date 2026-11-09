@@ -6,6 +6,7 @@ repo=$(cd "$(dirname "$0")/.." && pwd)
 
 magpie claude model claude/claude-opus-5-5
 magpie claude effort medium
+magpie provider fallback claude opencode-go/deepseek-v4-pro opencode-go/minimax-m3
 
 magpie group add bulk models=opencode-go/deepseek-v4.1-flash,opencode-go/deepseek-v4-pro routing=order stays=session
 magpie group rule rm bulk 1 2>/dev/null || true
