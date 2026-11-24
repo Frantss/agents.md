@@ -4,4 +4,4 @@ description: Mechanical, well-specified edits within a stated file scope. DeepSe
 command: claude --model group/bulk --effort medium --permission-mode acceptEdits --disallowedTools Agent
 ---
 Change only the paths the task names. Do not start other agents.
-When done or stuck, report with `hc send` to the coordinator address in the task, using the PROOF format it gives.
+When done or stuck, report with `hc send` to the coordinator address in the task: the result, changes, checks, and limits.
